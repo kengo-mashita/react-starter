@@ -1,3 +1,14 @@
+import { Header, Footer } from '@/components/layout';
+import { Home } from '@/pages';
+
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div className="min-h-screen flex flex-col bg-gray-50">
+      <Header />
+      <main>
+        <Home />
+      </main>
+      <Footer />
+    </div>
+  );
 }
