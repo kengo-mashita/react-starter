@@ -86,8 +86,12 @@ export default function About() {
 
         <Card title="Navigation Controls">
           <div className="flex gap-3 justify-center">
-            <Button onClick={goBack}>← 戻る</Button>
-            <Button onClick={goHome}>🏠 ホームへ</Button>
+            <Button onClick={goBack} variant="outline">
+              ← 戻る
+            </Button>
+            <Button onClick={goHome} variant="primary">
+              🏠 ホームへ
+            </Button>
           </div>
         </Card>
       </div>

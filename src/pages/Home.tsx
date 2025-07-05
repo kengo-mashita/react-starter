@@ -21,13 +21,18 @@ export default function Home() {
             <p className="mb-6 text-2xl font-bold">Count: {count}</p>
 
             <div className="flex gap-2 justify-center">
-              <Button onClick={handleIncrement} disabled={loading}>
+              <Button
+                onClick={handleIncrement}
+                disabled={loading}
+                loading={loading}
+                variant="primary"
+              >
                 {loading ? 'Incrementing...' : 'Increment'}
               </Button>
-              <Button onClick={() => setCount(count - 1)} disabled={loading}>
+              <Button onClick={() => setCount(count - 1)} disabled={loading} variant="secondary">
                 Decrement
               </Button>
-              <Button onClick={() => setCount(0)} disabled={loading}>
+              <Button onClick={() => setCount(0)} disabled={loading} variant="outline" size="sm">
                 Reset
               </Button>
             </div>
