@@ -45,21 +45,6 @@ export default function About() {
                 ))}
               </ul>
             </div>
-
-            <div>
-              <h3 className="font-medium mb-3">Current Route Info</h3>
-              <div className="bg-gray-50 p-3 rounded text-sm font-mono">
-                <p>
-                  <strong>Pathname:</strong> {location.pathname}
-                </p>
-                <p>
-                  <strong>Search:</strong> {location.search || '(none)'}
-                </p>
-                <p>
-                  <strong>Hash:</strong> {location.hash || '(none)'}
-                </p>
-              </div>
-            </div>
           </div>
         </Card>
 
