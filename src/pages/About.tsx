@@ -1,10 +1,9 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Button, Card } from '@/components/ui';
 import { APP_NAME, VERSION, DESCRIPTION } from '@/constants';
 
 export default function About() {
   const navigate = useNavigate();
-  const location = useLocation();
 
   const techStack = [
     'React 19 + TypeScript',
